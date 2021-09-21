@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clase 58 - Bulma</title>
+    <script src="https://kit.fontawesome.com/5f7fafbd10.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+  </head>
+
+  <label></label>
+
+<div class="container">
+  <section class="section">
+
+    <div class="columns">
+
+      <div class="column is-5 has-background-primary"></div>
+      <div class="column is-3">
+
+      <form>
+        
+        <div class="field">
+          <label class="label" for="edad">Esto es un label</label>
+          <div class="control" id="control-edad">
+            <input class="input"  id="edad" type="text">
+          </div>
+          <p class="help is-hidden">De 9 a 99 años</p>
+        </div>
+
+        <div class="field">
+          <label class="label" for="username">Nombre de usuario</label>
+          <div class="control">
+            <input class="input" id="username" type="text">
+          </div>
+          <p class="help is-success is-hidden" id="help-username">El nombre de usuario esta disponible</p>
+        </div>
+
+        <div class="field">
+          <label class="label" for="email">Email</label>
+          <div class="control is-loading ">
+            <input class="input "  id="email" type="email">
+          </div>
+        </div>
+
+              <!-- para el select la estructura cambia, 
+    porque se agrega un div con la clase select -->
+    <div class="field">
+      <label class="label">Select</label>
+      <div class="control has-icons-left">
+        <span class="icon is-small is-right has-text-primary">
+          <i class="fas fa-envelope"></i>
+        </span>
+          <div class="select is-fullwidth">
+          <select>
+            <option>Mendoza</option>
+            <option>Chaco</option>
+            <option>Cordoba</option>
+            <option>Tucuman</option>
+            <option>Misiones</option>
+
+          </select>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Select</label>
+      <div class="control">
+        <div class="select is-multiple">
+        <select multiple size="3">
+          <option>Mendoza</option>
+          <option>Chaco</option>
+          <option>Cordoba</option>
+          <option>Tucuman</option>
+          <option>Misiones</option>
+
+        </select>
+      </div>
+      </div>
+    </div>
+
+        <div class="field">
+          <label class="label" for="date">Date</label>
+          <div class="control">
+            <input class="input" id="date" type="date">
+          </div>
+        </div>
+        
+        <div class="field">
+          <label class="label" for="password">Password</label>
+          <div class="control has-icons-left has-icons-right">
+            <span class="icon is-small is-left has-text-primary">
+              <i class="fas fa-envelope"></i>
+            </span>
+            <input class="input" id="password" type="password">
+            <span class="icon is-small is-right has-text-primary">
+              <i class="fas fa-envelope"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label" for="textarea">Text area no-tan-nazi</label>
+          <div class="control">
+            <textarea class="textarea"></textarea>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label" for="edad">Esto es un label</label>
+          <div class="control">
+            <input class="checkbox"  id="edad" type="checkbox"> Checkbox
+          </div>
+          <p class="help is-hidden">De 9 a 99 años</p>
+        </div>
+
+
+      
+      </form>
+      </div>
+
+    </div>
+
+
+
+
+  </section>
+</div>
+
+  
+  <input type="text">
+  <button role="button">Hola</button>
+
+  <select>
+    <option value="mdz">Mendoza</option>
+    <option value="cba">Cordoba</option>
+    <option value="ba">Buenos Aires</option>
+  </select>
+
+  <input type="radio">
+  <input type="checkbox">
+
+
+  <input type="submit">
+
+
+
+  <textarea></textarea>
+
+
+
+  <script src="index.js"></script>
+  </body>
+</html>
